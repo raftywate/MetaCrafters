@@ -1,2 +1,3 @@
 # MetaCrafters
-Has all the projects/tasks done in MetaCrafters course
+Has all the projects/tasks done in MetaCrafters course.
+
