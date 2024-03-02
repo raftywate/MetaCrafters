@@ -1,0 +1,36 @@
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ExampleContract {
+    address public owner;
+    uint256 public value;
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not the contract owner");
+        _;
+    }
+
+    function setValue(uint256 _newValue) external onlyOwner {
+        // Using require to check a condition
+        require(_newValue > 0, "Value must be greater than 0");
+
+        // Using assert to check an assertion
+        assert(_newValue != value);
+
+        // Using revert to revert the transaction with a custom message
+        revert("Transaction reverted");
+
+        // The following code will not be executed if revert() is called
+        value = _newValue;
+    }
+
+    // A function that triggers an assert failure
+    function triggerAssertFailure() external onlyOwner {
+        assert(false);
+    }
+}
