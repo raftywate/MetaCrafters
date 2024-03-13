@@ -17,4 +17,13 @@ This basic contract serves the purpose of verifying whether the contract owner m
 
 **4. Eth-Avax Int Module 2:**
 
+The CustomToken contract, incorporating ERC20, ERC20Burnable, and Ownable from the OpenZeppelin library, establishes a versatile token system. The constructor initializes the token with the name 'MyToken' and symbol 'MyTk.' The mint function, restricted to the contract owner, allows token creation by invoking the _mint function from the ERC20 contract with specified parameters.
+
+**5. Eth-Avax Int Module 3:**
+
 This project has been created using the React JS as the frontend for this file has been developed in the React and there is a simple smart contract developed in Solidity which gets integrated with the frontend application and all the functionalities of the contract can be accessed using the frontend. 
+
+
+**6. Eth-Avax Int Module 4:**
+
+MyToken Contract requires Solidity ^0.8.0. It features the MyToken contract, managing token balances, item redemption, and ownership control. The contract includes functions like minting tokens, transferring, redeeming items, and checking balances, with detailed mappings and a constructor initializing key variables."
