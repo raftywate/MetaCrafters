@@ -15,8 +15,8 @@ contract MyToken {
     mapping(address => uint256) private balances;
 
     constructor() {
-        name = "GameMoney";
-        symbol = "GM";
+        name = "DEGEN";
+        symbol = "DGN";
         owner = msg.sender;
     }
 
