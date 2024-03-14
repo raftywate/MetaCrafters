@@ -8,10 +8,10 @@ const hre = require("hardhat");
 const fxRootContractABI = require("../fxRootContractABI.json");
 const contractJSON = require("../artifacts/contracts/MetaToken.sol/MetaToken.json");
 
-const contractAddress = "0xACe3992b9B3438E3C0A89F486020BEb592A231a5"; // 
+const contractAddress = "0x576842600F32686c7F109f3ff66B8d4C02D54B0B"; // 
 const contractABI = contractJSON.abi;
 const fxERC721ContractAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
-const walletAddress = "0xbEeF312074d8b75B661BC07FF6135fD808E71890"; // place your public address for your wallet here
+const walletAddress = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"; // place your public address for your wallet here
 
 async function main() {
 
