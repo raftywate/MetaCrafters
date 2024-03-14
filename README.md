@@ -14,6 +14,7 @@ This program constitutes a straightforward Solidity contract that can be compile
    
 This basic contract serves the purpose of verifying whether the contract owner matches the user interacting with it. To accomplish this, three error-handling methods—require(), revert(), and assert()—have been implemented, each carrying out the same verification task.
 
+Contract Details The ErrorHandlingContract is a smart contract that manages a balance variable. The deposit function allows users to add funds to the balance, but it requires the deposit amount to be greater than zero. The withdraw function lets users withdraw funds from the balance, but it checks if the withdrawal amount is greater than the available balance. If it is, the transaction is reverted with an "Insufficient balance" error message. The checkBalance function returns the current value of the balance variable, but it also uses an assert statement to ensure the balance is always greater than or equal to zero. Overall, the contract implements basic error handling and validation using the require(), assert(), and revert() statements to ensure proper behavior and prevent incorrect operations.
 
 **4. Eth-Avax Int Module 2:**
 
